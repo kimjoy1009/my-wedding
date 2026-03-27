@@ -244,23 +244,8 @@ a {
 .parent-line {
     font-size: 14px;
     color: #555;
-    margin: 8px 0;
-    line-height: 1.8;
-    text-align: center;
-}
-
-.parent-group {
-    display: inline-block;
-}
-
-.parent-role {
-    display: inline-block;
-    margin: 0 10px;
-    color: #999;
-}
-
-.child-name {
-    display: inline-block;
+    margin: 5px 0;
+    line-height: 1.6;
 }
 
 .parent-names {
