@@ -242,10 +242,11 @@ a {
 }
 
 .parent-line {
-    display: flex;
+    display: grid;
+    grid-template-columns: auto auto auto;
     justify-content: center;
     align-items: center;
-    gap: 12px;
+    column-gap: 10px;
     font-size: 14px;
     color: #555;
     margin: 5px 0;
@@ -253,7 +254,6 @@ a {
 }
 
 .parent-left {
-    min-width: 120px;
     text-align: right;
 }
 
@@ -263,7 +263,6 @@ a {
 }
 
 .parent-right {
-    min-width: 70px;
     text-align: left;
 }
 
