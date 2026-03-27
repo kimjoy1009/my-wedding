@@ -246,6 +246,13 @@ a {
     color: #555;
     margin: 5px 0;
     line-height: 1.6;
+    text-align: justify;
+}
+
+.parent-line::after {
+    content: '';
+    display: inline-block;
+    width: 100%;
 }
 
 .parent-names {
