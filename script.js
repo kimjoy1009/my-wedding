@@ -159,7 +159,7 @@
       const petal = document.createElement('div');
       petal.className = 'petal';
 
-      const startX = Math.random() * 20;
+      const startX = Math.random() * 35;
       const size = Math.random() * 8 + 8;
       const duration = Math.random() * 4 + 6;
       const delay = Math.random() * 0.5;
