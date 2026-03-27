@@ -242,28 +242,25 @@ a {
 }
 
 .parent-line {
-    display: grid;
-    grid-template-columns: auto auto auto;
-    justify-content: center;
-    align-items: center;
-    column-gap: 10px;
     font-size: 14px;
     color: #555;
-    margin: 5px 0;
-    line-height: 1.6;
+    margin: 8px 0;
+    line-height: 1.8;
+    text-align: center;
 }
 
-.parent-left {
-    text-align: right;
+.parent-group {
+    display: inline-block;
 }
 
-.parent-mid {
+.parent-role {
+    display: inline-block;
+    margin: 0 10px;
     color: #999;
-    white-space: nowrap;
 }
 
-.parent-right {
-    text-align: left;
+.child-name {
+    display: inline-block;
 }
 
 .parent-names {
