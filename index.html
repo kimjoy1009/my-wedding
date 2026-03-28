@@ -64,7 +64,7 @@
   </div>
 </section>
 
-<!-- ─── 2️⃣ 초대합니다 ─── -->
+<!-- ─── 초대합니다 ─── -->
 <section class="section section-intro">
   <div class="intro-content">
     
@@ -74,15 +74,58 @@
       <p id="storyContent"></p>
     </div>
 
+    <!-- ─── 7️⃣ 기존 스토리 사진 (갤러리처럼 사용 가능) ─── -->
+<div class="section section-story" id="storySection">
+  <div class="story-photos" id="storyPhotos"></div>
+  <div class="story-photos story-photos-bottom" id="storyPhotosBottom"></div>
+</div>
+    
     <!-- 부모님 -->
     <div class="parents-info" id="heroParents"></div>
 
   </div>
 </section>
 
-<!-- ─── 4️⃣ 날짜 ─── -->
+<!-- ─── 날짜 ─── -->
 <section class="section section-date">
+
+  <!-- 날짜 -->
   <p class="wedding-date" id="heroDate"></p>
+
+  <!-- 달력 이미지 -->
+  <div class="calendar-image">
+    <img src="images/calendar.jpg" alt="calendar">
+  </div>
+
+  <!-- 카운트다운 -->
+  <div class="countdown-container">
+    <div class="countdown-item">
+      <span class="countdown-number" id="countdown-days">0</span>
+      <span class="countdown-label">일</span>
+    </div>
+    <div class="countdown-separator">:</div>
+    <div class="countdown-item">
+      <span class="countdown-number" id="countdown-hours">0</span>
+      <span class="countdown-label">시간</span>
+    </div>
+    <div class="countdown-separator">:</div>
+    <div class="countdown-item">
+      <span class="countdown-number" id="countdown-minutes">0</span>
+      <span class="countdown-label">분</span>
+    </div>
+    <div class="countdown-separator">:</div>
+    <div class="countdown-item">
+      <span class="countdown-number" id="countdown-seconds">0</span>
+      <span class="countdown-label">초</span>
+    </div>
+  </div>
+
+  <!-- 캘린더 버튼 -->
+  <div class="calendar-buttons">
+    <a href="#" class="calendar-btn google-cal" id="googleCalBtn" target="_blank" rel="noopener">구글 캘린더</a>
+    <button class="calendar-btn apple-cal" id="icsDownloadBtn">애플 캘린더</button>
+  </div>
+
 </section>
 
 <!-- ─── 5️⃣ 이름 (선택) ─── -->
@@ -94,45 +137,6 @@
 <section class="section section-location">
   <p class="venue" id="heroVenue"></p>
 </section>
-
-<!-- ─── 7️⃣ 기존 스토리 사진 (갤러리처럼 사용 가능) ─── -->
-<section class="section section-story" id="storySection">
-  <div class="story-photos" id="storyPhotos"></div>
-  <div class="story-photos story-photos-bottom" id="storyPhotosBottom"></div>
-</section>
-    
-  <!-- ─── 두번째 섹션: 날짜 ─── -->
-   <section class="section section-hero">
-     <div class="countdown-container">
-          <div class="countdown-item">
-            <span class="countdown-number" id="countdown-days">0</span>
-            <span class="countdown-label">일</span>
-          </div>
-          <div class="countdown-separator">:</div>
-          <div class="countdown-item">
-            <span class="countdown-number" id="countdown-hours">0</span>
-            <span class="countdown-label">시간</span>
-          </div>
-          <div class="countdown-separator">:</div>
-          <div class="countdown-item">
-            <span class="countdown-number" id="countdown-minutes">0</span>
-            <span class="countdown-label">분</span>
-          </div>
-          <div class="countdown-separator">:</div>
-          <div class="countdown-item">
-            <span class="countdown-number" id="countdown-seconds">0</span>
-            <span class="countdown-label">초</span>
-          </div>
-
-        <div class="calendar-buttons">
-          <a href="#" class="calendar-btn google-cal" id="googleCalBtn" target="_blank" rel="noopener">구글 캘린더</a>
-          <button class="calendar-btn apple-cal" id="icsDownloadBtn">애플 캘린더</button>
-        </div>
-      </div>
-      <div class="scroll-indicator">
-        <span></span>
-      </div>
-    </section>
     
     <!-- ─── 세번째 섹션: 갤러리 ─── -->
     <section class="section section-gallery" id="gallerySection">
