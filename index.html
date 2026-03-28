@@ -54,7 +54,60 @@
   <!-- ═══ 메인 콘텐츠 ═══ -->
   <main class="main-container">
 
-           <!-- ─── 세번째 섹션: 예식 안내 ─── -->
+          <!-- ─── 첫번째 섹션: 메인 웨딩 사진 ─── -->
+    <section class="section section-hero">
+      <div class="hero-image-container">
+        <img src="" alt="웨딩 메인 사진" class="hero-image" id="heroImage">
+      </div>
+      <div class="hero-text">
+        <p class="wedding-date" id="heroDate"></p>
+        <h1 class="couple-names" id="heroNames"></h1>
+        <div class="parents-info" id="heroParents"></div>
+        <p class="venue" id="heroVenue"></p>
+
+        <div class="countdown-container">
+          <div class="countdown-item">
+            <span class="countdown-number" id="countdown-days">0</span>
+            <span class="countdown-label">일</span>
+          </div>
+          <div class="countdown-separator">:</div>
+          <div class="countdown-item">
+            <span class="countdown-number" id="countdown-hours">0</span>
+            <span class="countdown-label">시간</span>
+          </div>
+          <div class="countdown-separator">:</div>
+          <div class="countdown-item">
+            <span class="countdown-number" id="countdown-minutes">0</span>
+            <span class="countdown-label">분</span>
+          </div>
+          <div class="countdown-separator">:</div>
+          <div class="countdown-item">
+            <span class="countdown-number" id="countdown-seconds">0</span>
+            <span class="countdown-label">초</span>
+          </div>
+        </div>
+
+        <div class="calendar-buttons">
+          <a href="#" class="calendar-btn google-cal" id="googleCalBtn" target="_blank" rel="noopener">구글 캘린더</a>
+          <button class="calendar-btn apple-cal" id="icsDownloadBtn">애플 캘린더</button>
+        </div>
+      </div>
+      <div class="scroll-indicator">
+        <span></span>
+      </div>
+    </section>
+
+  <!-- ─── 두번째 섹션: 스토리 ─── -->
+    <section class="section section-story" id="storySection">
+      <div class="story-photos" id="storyPhotos"></div>
+      <div class="story-text">
+        <h2 id="storyTitle"></h2>
+        <p id="storyContent"></p>
+      </div>
+      <div class="story-photos story-photos-bottom" id="storyPhotosBottom"></div>
+    </section>
+
+       <!-- ─── 세번째 섹션: 예식 안내 ─── -->
     <section class="section section-schedule" id="scheduleSection">
       <p class="wedding-date" id="heroDate"></p>
 
@@ -93,56 +146,6 @@
         </button>
       </div>
     </section>
-
-  <!-- ─── 두번째 섹션: 스토리 ─── -->
-    <section class="section section-story" id="storySection">
-      <div class="story-photos" id="storyPhotos"></div>
-      <div class="story-text">
-        <h2 id="storyTitle"></h2>
-        <p id="storyContent"></p>
-      </div>
-      <div class="story-photos story-photos-bottom" id="storyPhotosBottom"></div>
-    </section>
-
-    <!-- ─── 세번째 섹션: 예식 안내 ─── -->
-    <section class="section section-schedule" id="scheduleSection">
-  <p class="wedding-date" id="heroDate"></p>
-
-  <div class="schedule-calendar-image-wrap">
-    <img src="hero/cal.png" alt="예식 달력 이미지" class="schedule-calendar-image">
-  </div>
-
-  <div class="countdown-container">
-    <div class="countdown-item">
-      <span class="countdown-number" id="countdown-days">0</span>
-      <span class="countdown-label">일</span>
-    </div>
-    <div class="countdown-separator">:</div>
-    <div class="countdown-item">
-      <span class="countdown-number" id="countdown-hours">0</span>
-      <span class="countdown-label">시간</span>
-    </div>
-    <div class="countdown-separator">:</div>
-    <div class="countdown-item">
-      <span class="countdown-number" id="countdown-minutes">0</span>
-      <span class="countdown-label">분</span>
-    </div>
-    <div class="countdown-separator">:</div>
-    <div class="countdown-item">
-      <span class="countdown-number" id="countdown-seconds">0</span>
-      <span class="countdown-label">초</span>
-    </div>
-  </div>
-
-  <div class="calendar-buttons">
-    <a href="#" class="calendar-btn google-cal" id="googleCalBtn" target="_blank" rel="noopener">
-      구글 캘린더
-    </a>
-    <button class="calendar-btn apple-cal" id="icsDownloadBtn">
-      애플 캘린더
-    </button>
-  </div>
-</section>
     
     <!-- ─── 세번째 섹션: 갤러리 ─── -->
     <section class="section section-gallery" id="gallerySection">
