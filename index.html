@@ -75,16 +75,15 @@
       <div class="parents-info" id="heroParents"></div>
     </section>
 
-   <!-- ─── 세번째 섹션: 예식 안내 ─── -->
-    <section class="section section-schedule" id="scheduleSection">
-       <h2 class="schedule-title">2026.08.30</h2>
-      <p class="wedding-date" id="heroDate"></p>
-
-      <div class="schedule-calendar-image-wrap">
-        <img src="images/hero/2.png" alt="예식 달력 이미지" class="schedule-calendar-image" id="calendarImage">
-      </div>
-
+   <!-- ─── 세번째 섹션: 예식 안내 ─── -->      
+    <section class="section calendar-section" id="calendarSection">
+      <div class="section__inner">
+        <h2 class="section__title animate-item" data-animate="fade-up">예식 일시</h2>
+         <p class="wedding-date" id="heroDate"></p>
+        <div class="calendar animate-item" data-animate="scale-in" id="calendarGrid"></div>
+        <div class="calendar-actions animate-item" data-animate="fade-up">
        <div class="countdown-container">
+         
           <div class="countdown-item">
             <span class="countdown-number" id="countdown-days">0</span>
             <span class="countdown-label">일</span>
