@@ -269,6 +269,58 @@
     setInterval(update, 1000);
   }
 
+/* ═══════════════════════════════════════════
+     Calendar Section
+     ═══════════════════════════════════════════ */
+
+  function initCalendar() {
+    const dt = getWeddingDateTime();
+    const year = dt.getFullYear();
+    const month = dt.getMonth();
+    const weddingDay = dt.getDate();
+
+    const grid = $('#calendarGrid');
+
+    // Header
+    const monthNames = ['January', 'February', 'March', 'April', 'May', 'June',
+      'July', 'August', 'September', 'October', 'November', 'December'];
+    grid.innerHTML = `<div class="calendar__header">${monthNames[month]} ${year}</div>`;
+
+    // Weekdays
+    const weekdays = ['일', '월', '화', '수', '목', '금', '토'];
+    const wdRow = document.createElement('div');
+    wdRow.className = 'calendar__weekdays';
+    weekdays.forEach(wd => {
+      const el = document.createElement('span');
+      el.className = 'calendar__weekday';
+      el.textContent = wd;
+      wdRow.appendChild(el);
+    });
+    grid.appendChild(wdRow);
+
+    // Days
+    const daysContainer = document.createElement('div');
+    daysContainer.className = 'calendar__days';
+
+    const firstDay = new Date(year, month, 1).getDay();
+    const lastDate = new Date(year, month + 1, 0).getDate();
+
+    for (let i = 0; i < firstDay; i++) {
+      const empty = document.createElement('span');
+      empty.className = 'calendar__day is-empty';
+      daysContainer.appendChild(empty);
+    }
+
+    for (let d = 1; d <= lastDate; d++) {
+      const dayEl = document.createElement('span');
+      dayEl.className = 'calendar__day';
+      if (d === weddingDay) dayEl.classList.add('is-today');
+      dayEl.textContent = d;
+      daysContainer.appendChild(dayEl);
+    }
+
+    grid.appendChild(daysContainer);
+  
   /* ═══════════════════════════════════════════
      Calendar (Google Cal & ICS)
      ═══════════════════════════════════════════ */
